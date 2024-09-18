@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    image: r4y4n3/projeto_igreja-server
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/projeto_igreja
+    depends_on:
+      - db
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+    secrets:
+      - r4y4n3
+      - Jr679832@
+
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=projeto_igreja
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+
+secrets:
+  dockerhub_username:
+    external: true
+  dockerhub_password:
+    external: true

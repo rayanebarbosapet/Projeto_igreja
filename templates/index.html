@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Visitantes</title>
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Cadastro de Visitantes</h1>
+        <form action="/adicionar" method="post" class="mt-4">
+            <div class="form-group">
+                <label for="foto">Foto (URL):</label>
+                <input type="text" class="form-control" id="foto" name="foto">
+            </div>
+            <div class="form-group">
+                <label for="nome_completo">Nome Completo:</label>
+                <input type="text" class="form-control" id="nome_completo" name="nome_completo">
+            </div>
+            <div class="form-group">
+                <label for="idade_geracional">Idade Geracional:</label>
+                <input type="text" class="form-control" id="idade_geracional" name="idade_geracional">
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="text" class="form-control" id="telefone" name="telefone">
+            </div>
+            <div class="form-group">
+                <label for="data_visita">Data da Visita:</label>
+                <input type="date" class="form-control" id="data_visita" name="data_visita">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+        </form>
+    </div>
+    <!-- Link do Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
