@@ -7,7 +7,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - DATABASE_URL=postgresql://postgres:password@db:5432/projeto_igreja
+      - DATABASE_URL=postgresql://postgres:PTHHOstJuOVkPhtSIlfboNjVeWwyvNSa@postgres.railway.internal:5432/railway
     depends_on:
       - db
     logging:
@@ -22,9 +22,9 @@ services:
   db:
     image: postgres
     environment:
-      - POSTGRES_DB=projeto_igreja
+      - POSTGRES_DB=railway
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=123456
+      - POSTGRES_PASSWORD=PTHHOstJuOVkPhtSIlfboNjVeWwyvNSa
     volumes:
       - postgres_data:/var/lib/postgresql/data
 

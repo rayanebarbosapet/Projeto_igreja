@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 def conectar():
     conn = psycopg2.connect(
-        dbname='projeto_igreja',
+        dbname='railway',
         user='postgres',
-        password='123456',
-        host='localhost',
-        port='3000'
+        password='tSIlfboNjVeWwyvNSa',
+        host='autorack.proxy.rlwy.net',
+        port='36405'
     )
     return conn
 
