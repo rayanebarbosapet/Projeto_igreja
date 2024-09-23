@@ -2,9 +2,9 @@ import psycopg2
 
 def conectar():
     conn = psycopg2.connect(
-        dbname='nome_do_banco',
-        user='seu_usuario',
-        password='sua_senha',
+        dbname='projeto_igreja',
+        user='postgres',
+        password='123456',
         host='localhost',
         port='5432'
     )
