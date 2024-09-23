@@ -7,7 +7,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - DATABASE_URL=postgresql://postgres:********@autorack.proxy.rlwy.net:36405/railway
+      - DATABASE_URL=postgresql://postgres:password@db:5432/projeto_igreja
     depends_on:
       - db
     logging:
