@@ -5,7 +5,7 @@ def conectar():
         dbname='projeto_igreja',
         user='postgres',
         password='123456',
-        host='localhost',
-        port='3000'
+        host='postgresql://postgres:********@autorack.proxy.rlwy.net:36405/railway',
+        port='36405'
     )
     return conn
