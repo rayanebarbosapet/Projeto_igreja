@@ -4,7 +4,7 @@ def conectar():
     conn = psycopg2.connect(
         dbname='railway',
         user='postgres',
-        password='tSIlfboNjVeWwyvNSa',
+        password='PTHHOstJuOVkPhtSIlfboNjVeWwyvNSa',
         host='autorack.proxy.rlwy.net',
         port='36405'
     )
